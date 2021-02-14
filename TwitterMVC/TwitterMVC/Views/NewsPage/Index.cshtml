@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "News Page";
+}
+@model TwitterMVC.ViewModels.NewsPageModel
+
+
+<div class="twitts-container">
+    @foreach (var item in Model.Twitts)
+    {
+    <div class="twitt">
+        <div class="user-info">
+            <p>@item.PartitionKey</p>
+            <p>@item.Timestamp.DateTime.Date.ToShortDateString()</p>
+        </div>
+        <div class="twitt-info">
+            <p>@item.Text</p>
+
+            <img src="@item.ImageUrl">
+        </div>
+    </div>
+    }
+</div>
+
+

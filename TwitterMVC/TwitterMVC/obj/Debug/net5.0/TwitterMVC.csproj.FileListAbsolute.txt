@@ -1,0 +1,8 @@
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.csprojAssemblyReference.cache
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.AssemblyInfoInputs.cache
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.AssemblyInfo.cs
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.csproj.CoreCompileInputs.cache
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.RazorAssemblyInfo.cache
+C:\Users\Yana Zaitsava\source\repos\TwitterMVC\TwitterMVC\obj\Debug\net5.0\TwitterMVC.RazorAssemblyInfo.cs
