@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TwitterMVC</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+@{
+    var pageName = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<body>
+    <div class="main-container">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="menu">
+                <a class="@(pageName == "HomePage" ? "menu-item active" : "menu-item")" asp-action="Index" asp-controller="HomePage">Home</a>
+                <a class="@(pageName == "ChannelsPage" ? "menu-item active" : "menu-item")" asp-action="Index" asp-controller="ChannelsPage">Channels</a>
+                <a class="@(pageName == "NewsPage" ? "menu-item active" : "menu-item")" asp-action="Index" asp-controller="NewsPage">News</a>
+                <a class="@(pageName == "Account" ? "menu-item active" : "menu-item")" asp-action="Logout" asp-controller="Account">Logout</a>
+            </div>
+        }
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

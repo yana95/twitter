@@ -1,0 +1,22 @@
+﻿@model TwitterMVC.ViewModels.ChannelsPageModel
+
+<div class="channels-container">
+    @foreach (var item in Model.Channels)
+    {
+        <div class="channel">
+            <div>
+                <p>@item.PartitionKey</p>
+                <p>Followers @item.Followers.Count</p>
+                <p>Followings @item.Followings.Count</p>
+            </div>
+            @if (item.Followers.Exists(f => f == Model.CurrentUser.PartitionKey))
+            {
+                <a asp-action="UnFollow" asp-controller="ChannelsPage" asp-route-id="@item.PartitionKey">Unfollow</a>
+            }
+            else
+            {
+                <a asp-action="Follow" asp-controller="ChannelsPage" asp-route-id="@item.PartitionKey">Follow</a>
+            }
+        </div>
+    }
+</div>
